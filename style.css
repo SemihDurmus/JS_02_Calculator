@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: #6c5ce7;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 24rem;
+    height: 32rem;
+    background-color: #828282;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) ;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-areas: "screen1 screen1 screen1 screen1"
+                         "ac ac del division"
+                         "one two three mult"
+                         "four five six plus"
+                         "seven eight nine minus"
+                         "dot zero equal equal";
+}
+
+#screen {grid-area: screen1}
+#ac {grid-area: ac;}
+#del {grid-area: del;}
+#division {grid-area: division;}
+
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#mult {grid-area: mult;}
+
+#four {grid-area: four;}
+#five {grid-area: five;}
+#six {grid-area: six;}
+#plus {grid-area: plus;}
+
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#minus {grid-area: minus;}
+
+#dot {grid-area: dot;}
+#zero {grid-area: zero;}
+#equal {grid-area: equal;}
+
+.keys {
+    border: 5px outset #2d3436;
+    background-color: #a29bfe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 2rem;
+    position: relative;
+}
+
+.keys:hover {
+    color: #FFF;
+}
+
+.keys:active {
+    top:1px;
+}
+
+
+
+#screen {
+    background-color: #2d3436;
+    font-family: 'Audiowide' , sans-serif;
+    font-size: 3rem;
+    color: #4cd137;
+}
+
