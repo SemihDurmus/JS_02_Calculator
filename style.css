@@ -69,6 +69,10 @@ body {
     cursor: pointer;
 }
 
+.keys:focus {
+    outline: none;
+}
+
 .keys:hover {
     color: #a29bfe;
     background-color: #2d3436;
